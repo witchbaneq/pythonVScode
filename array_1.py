@@ -1,4 +1,4 @@
-man = [5, 1 , 6 , 10 , 2, ]
+man = [5, 1 , 6 , 10 , 2,]
 print(man, " =  array")
 
 print("----------------")
@@ -8,15 +8,18 @@ print(man, " =  sort man")
 
 print("----------------")
 
-sorted_man = sorted(man) # не меняет оригинальный список, а возвращает новый 
-print(sorted_man, " = sorted man")
+man_0 = [5, 1 , 6 , 10 , 2,]
+sorted_man_0 = sorted(man_0) # не меняет оригинальный список, а возвращает новый
+print(sorted_man_0, " = sorted man_0")
 
 print("----------------")
 
-man.reverse()
-print(man, " = revers man")
+man_1 = [5, 1 , 6 , 10 , 2,]
+man_1.reverse() # меняет оригинальный список
+print(man_1, " = revers man_1")
 
 print("----------------")
 
-reversed_man = list(reversed(man))
-print(reversed_man, " = reversed man")
+man_2 = [5, 1 , 6 , 10 , 2,]
+reversed_man_2 = list(reversed(man_2)) # не меняет оригинальный список, а возвращает новый
+print(reversed_man_2, " = reversed man_2")
