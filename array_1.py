@@ -3,14 +3,13 @@ print(man, " =  array")
 
 print("----------------")
 
-man.sort()
+man.sort() # меняет оригинальный список
 print(man, " =  sort man")
 
 print("----------------")
 
-sorted_man = sorted(man)
+sorted_man = sorted(man) # не меняет оригинальный список, а возвращает новый 
 print(sorted_man, " = sorted man")
-# The sorted() method does not modify the original list, it returns a new sorted list.
 
 print("----------------")
 
