@@ -1,5 +1,10 @@
+from random import shuffle
+# Работа со списками (массивами)
+
+
 man = [5, 1 , 6 , 10 , 2,]
 print(man, " =  array")
+print(man[1])
 
 print("----------------")
 
@@ -37,3 +42,11 @@ array.insert(2, 8) # вставляет элемент по индексу
 print(array)
 array.remove(8) # удаляет элемент по значению
 print(array)
+array.clear() # очищает список
+print(array)
+
+print("----------------")
+
+array_0 = [1, 2, 3, 4, 5]
+shuffle(array_0)  # перемешивает элементы списка
+print(array_0, " = shuffle array_0")
