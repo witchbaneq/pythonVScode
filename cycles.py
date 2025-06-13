@@ -20,3 +20,11 @@ for i in range(100):
 
 for i in range(0, 20, 2): # 0 - начальное значение, 20 - конечное значение, 2 - шаг
     print(i)  # выводит четные числа от 0 до 20
+
+password = ""
+while password != "1234":
+    password = input("Enter password: ")
+    if password == "1234":
+        print("Пароль верный")
+    else:
+        print("Пароль неверный, попробуйте еще раз")
