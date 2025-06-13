@@ -8,8 +8,10 @@ def get_user_numbers():
 
 
 
-def sum_of_numbers(numbers):
-    result = numbers.get("first_number") + numbers.get("second_number")
+def sum_of_numbers(numbers, additional_number, minus_number=False):
+    result = numbers.get("first_number") + numbers.get("second_number") + additional_number
+    if minus_number:
+        result -= 2
     return result
 
 
@@ -17,8 +19,8 @@ def sum_of_numbers(numbers):
 user_one_numbers = get_user_numbers()
 user_two_numbers = get_user_numbers()
 
-first_sum = sum_of_numbers(user_one_numbers)
-second_sum = sum_of_numbers(user_two_numbers)
+first_sum = sum_of_numbers(user_one_numbers, 0, minus_number=True)
+second_sum = sum_of_numbers(user_two_numbers, 1)
 
 print(f"User One's numbers: {user_one_numbers['first_number']}, {user_one_numbers['second_number']}")
 
